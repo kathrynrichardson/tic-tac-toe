@@ -67,7 +67,7 @@ const Board = () => {
           })}
         </div>
       ))}
-      {winner && (
+      {(winner || count === 9) && (
         <button onClick={handlePlayAgain} className='play-again'>
           Play Again
         </button>
